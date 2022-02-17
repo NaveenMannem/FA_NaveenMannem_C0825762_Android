@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--    tools:context=".First"-->
+    <!--    android:gravity="center"-->
+    <!--    android:orientation="vertical">-->
+
+
+    <Button
+        android:id="@+id/currentLocation"
+        android:layout_width="199dp"
+        android:layout_height="108dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="222dp"
+        android:layout_marginEnd="17dp"
+        android:text="Show User Current Location">
+        <!--        android:layout_gravity="center"-->
+        <!--        android:layout_alignParentStart="true"-->
+        <!--        android:layout_alignParentTop="true"-->
+
+    </Button>
+
+    <TextView
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="40dp"
+        android:text="Select Map Type"
+        android:textColor="@android:color/black"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <RadioGroup
+        android:id="@+id/radioGrp"
+        android:layout_width="128dp"
+        android:layout_height="265dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="220dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/satellite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Satellite">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/hybrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hybrid">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/terrain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terrain">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="None">
+
+        </RadioButton>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/savedPlaces"
+        android:layout_width="199dp"
+        android:layout_height="108dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="342dp"
+        android:layout_marginEnd="17dp"
+        android:text="Show Saved Places">
+
+    </Button>
+
+    <Button
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="Show User Current Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+</RelativeLayout>
